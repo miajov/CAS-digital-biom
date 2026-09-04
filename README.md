@@ -16,7 +16,7 @@ Get your analysis running with automatic Desktop folder setup.
 4. Console shows:
 ```
 ✓ Created folder on Desktop: StudentAnalysis_Group1
-✓ Working directory set to: /Users/yourname/Desktop/StudentAnalysis_Group1
+✓ Working directory set to: /Users/yourname/Desktop/CASm3_groupwork
 ```
 
 **What happened:**
@@ -25,7 +25,7 @@ Get your analysis running with automatic Desktop folder setup.
 
 ### Step 2: Copy CSV File (1 minute)
 
-1. Look at your Desktop → see `StudentAnalysis_Group1` folder
+1. Look at your Desktop → see `CASm3_groupwork` folder
 2. Copy: `cas_digital_biom_outcomes.csv`
 3. Paste it in that folder
 4. Done! ✅
