@@ -123,7 +123,7 @@ This document explains the starting variables in the dataset.
 ### 💧 albuminuria
 - **Type:** Continuous (numeric)
 - **Description:** Protein (albumin) in urine - indicates kidney damage
-- **Unit:** mg/g creatinine (albumin-to-creatinine ratio)
+- **Unit:** mg/g creatinine (albumin-to-creatinine ratio; UACR)
 - **Range:** 0 to 3,000+ mg/g
 
 
@@ -134,9 +134,8 @@ This document explains the starting variables in the dataset.
 - **Type:** Binary (0/1)
 - **Description:** Presence of albuminuria (kidney damage)
 - **Categories:**
-  - 0 = 🟢 No albuminuria (normal)
-  - 1 = 🔴 Albuminuria present (kidney damage detected)
-- **Use:** For comparing prevalence of kidney problems
+  - 0 = 🟢 No albuminuria (normal). **UACR < 30 mg/g** 
+  - 1 = 🔴 Albuminuria present (kidney damage detected) **UACR ≥ 30 mg/g** 
 
 ---
 
@@ -161,11 +160,10 @@ This document explains the starting variables in the dataset.
 - **Categories:**
   - 0 = 🟢 No impairment (score ≥ 26)
   - 1 = 🔴 Cognitive impairment detected (score < 26)
-- **Use:** For simple prevalence of cognitive problems
 
 ---
 
-##MENTAL HEALTH VARIABLES
+## MENTAL HEALTH VARIABLES
 
 ### 😔 cesd (Center for Epidemiologic Studies Depression Scale)
 - **Type:** Continuous (numeric)
@@ -185,26 +183,22 @@ This document explains the starting variables in the dataset.
 - **Type:** Binary (0/1)
 - **Description:** Presence of significant depression
 - **Categories:**
-  - 0 = 🟢 No significant depression (score < 16)
-  - 1 = 🔴 Significant depression (score ≥ 16)
-- **Use:** For simple prevalence of depression
-
+  - 0 = 🟢 No signs of depression (score < 16)
+  - 1 = 🔴 Signs of depression (score ≥ 16)
 ---
 
 ## 💊 LIPID VARIABLES
 
 ### 💉 dyslipidemia_binary
+
 - **Type:** Binary (0/1)
 - **Description:** Presence of abnormal blood lipid levels
+Triglycerides ≥ 150 mg/dL
+OR LDL-C ≥ 130 mg/dL
+OR HDL-C < 40 mg/dL (men) / < 50 mg/dL (women)
 - **Categories:**
   - 0 = 🟢 Normal lipid profile
   - 1 = 🔴 Abnormal lipids (high cholesterol, triglycerides, or low HDL)
-
-- **Clinical Context:** 
-  - Dyslipidemia = abnormal cholesterol and triglycerides
-  - 🔴 Common in diabetes and obesity
-  - ⚠️ Major cardiovascular risk factor
-
 ---
 
 ## 📱 DATA SOURCE VARIABLES
@@ -282,39 +276,32 @@ Your group will analyze ONE of these outcomes:
 
 ### 🫘 Group 1: Albuminuria (Kidney Damage)
 - **Outcome:** `alb_binary` (0 = no kidney damage, 1 = kidney damage present)
-- **Clinical Question:** Which groups show more kidney complications from diabetes?
-- **Why it matters:** 🔴 Early sign of diabetic kidney disease
+
 
 ### 🧠 Group 2: Cognitive Impairment
 - **Outcome:** `moca_binary` (0 = normal cognition, 1 = impairment detected)
-- **Clinical Question:** Does diabetes accelerate cognitive decline?
-- **Why it matters:** 🔴 Affects quality of life and independence
 
 ### 😊 Group 3: Depression
 - **Outcome:** `cesd_binary` (0 = no depression, 1 = significant depression)
-- **Clinical Question:** Is depression more common in people with diabetes?
-- **Why it matters:** 🔴 Worsens metabolic control and health outcomes
 
 ### 💊 Group 4: Dyslipidemia (Abnormal Lipids)
 - **Outcome:** `dyslipidemia_binary` (0 = normal, 1 = abnormal)
-- **Clinical Question:** How does diabetes severity relate to lipid abnormalities?
-- **Why it matters:** 🔴 Major cardiovascular risk factor
 
 ---
 
 ## 🔍 KEY DESCRIPTIVE QUESTIONS
 
 ### 1️⃣ What is the overall prevalence of your outcome?
-Ask yourself: "In the entire sample, what percentage have this condition?"
+"In the entire sample, what percentage have this condition?"
 
 ### 2️⃣ How does it differ by study group?
-Ask yourself: "Is there a pattern correlated with diabetes severity? Does it get worse from healthy → insulin dependent?"
+"Is there a pattern correlated with diabetes severity? Does it get worse from healthy → insulin dependent?"
 
 ### 3️⃣ How does it differ by age?
-Ask yourself: "Are older participants more affected? Or younger? Is there a cutoff age?"
+"Are older participants more affected? Or younger? Is there a cutoff age?"
 
 ### 4️⃣ How does it differ by sex?
-Ask yourself: "Do men and women show different patterns? Any major differences?"
+"Do men and women show different patterns? Any major differences?"
 
 ---
 
