@@ -39,6 +39,6 @@ Get your analysis running with automatic Desktop folder setup.
 ```
 ✓ Data loaded successfully!
 File: cas_digital_biom_outcomes.csv
-Location: /Users/yourname/Desktop/CASAnalysis_GroupX
+Location: /Users/yourname/Desktop/CASm3_groupwork
 Dimensions: 968 rows × 18 columns
 ```
