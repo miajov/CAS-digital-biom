@@ -222,9 +222,7 @@ print(kable(table1, caption = "Overall Sample Characteristics"))
 # ==============================================================================
 # PLOT 1: PREVALENCE BY STUDY GROUP
 # ==============================================================================
-# THIS IS THE MOST IMPORTANT PLOT!
-# Shows what % of each group has your outcome
-# Helps answer: "Does disease severity affect the outcome?"
+# Shows what % of each group has your outcome of interest
 
 df %>%
   # Calculate stats for each study group separately
@@ -278,7 +276,6 @@ df %>%
 # PLOT 2: OUTCOME PREVALENCE BY SEX
 # ==============================================================================
 # Shows whether males and females differ in outcome prevalence
-# Helps answer: "Is sex a factor in your outcome?"
 
 df %>%
   # Calculate stats for each sex separately
@@ -359,7 +356,7 @@ df %>%
 # ==============================================================================
 # PLOT 3: OUTCOME PREVALENCE BY AGE QUARTILES
 # ==============================================================================
-# Shows whether outcome changes with age
+# Shows whether outcome varies by age
 # Quartiles = divide age into 4 equal groups (25% each)
 # Q1 = youngest, Q4 = oldest
 
