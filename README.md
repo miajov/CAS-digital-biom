@@ -281,7 +281,7 @@ Your group will analyze ONE of these outcomes:
 ### 🧠 Group 2: Cognitive Impairment
 - **Outcome:** `moca_binary` (0 = normal cognition, 1 = impairment detected)
 
-### 😊 Group 3: Depression
+### 😔 Group 3: Depression
 - **Outcome:** `cesd_binary` (0 = no depression, 1 = significant depression)
 
 ### 💊 Group 4: Dyslipidemia (Abnormal Lipids)
