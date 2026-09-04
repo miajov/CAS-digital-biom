@@ -10,12 +10,12 @@ Get your analysis running with automatic Desktop folder setup.
 ### Step 1: Run First Chunk (1 minute)
 
 **In RStudio:**
-1. Open: `student_descriptive_analysis.Rmd`
+1. Open: `casm3_descriptive_analysis.Rmd`
 2. Find: "setup-working-directory" chunk
 3. Click: Green ▶️ play button
 4. Console shows:
 ```
-✓ Created folder on Desktop: StudentAnalysis_Group1
+✓ Created folder on Desktop: CASm3_groupwork
 ✓ Working directory set to: /Users/yourname/Desktop/CASm3_groupwork
 ```
 
