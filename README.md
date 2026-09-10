@@ -16,7 +16,6 @@ This document explains the starting variables in the dataset.
 
 * **Type:** Numeric ID
 * **Description:** Unique identifier for each participant
-* **Range:** 1001 to 2068
 * **Example:** 1001, 1002, 1003
 * **Use:** Links data rows to specific individuals
 
@@ -63,7 +62,6 @@ This document explains the starting variables in the dataset.
 
 * **Type:** Continuous (numeric)
 * **Description:** Hemoglobin A1c - measures average blood glucose over 3 months
-* **Range:** 4.8% to 10.5%
 * **Unit:** Percentage (%)
 
 | Value       | Meaning                      | Status            |
@@ -91,7 +89,6 @@ This document explains the starting variables in the dataset.
 
 * **Type:** Continuous (numeric)
 * **Description:** Body weight relative to height (weight in kg / height in m²)
-* **Range:** 17.0 to 48.5 kg/m²
 * **Unit:** kg/m²
 
 | Range       | Classification   |
@@ -138,7 +135,6 @@ This document explains the starting variables in the dataset.
 
 * **Unit:** mg/g creatinine (albumin-to-creatinine ratio; UACR)
 
-* **Range:** 0 to 3,000+ mg/g
 
 * **Key Insight:** ⚠️ Early sign of diabetes complications
 
@@ -162,8 +158,6 @@ This document explains the starting variables in the dataset.
 * **Type:** Continuous (numeric)
 
 * **Description:** Montreal Cognitive Assessment total score
-
-* **Range:** 0 to 30 points
 
 * **Unit:** Points
 
@@ -193,8 +187,6 @@ This document explains the starting variables in the dataset.
 * **Type:** Continuous (numeric)
 
 * **Description:** Depression symptom severity score
-
-* **Range:** 0 to 60 points
 
 * **Unit:** Points
 
