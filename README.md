@@ -192,12 +192,13 @@ This document explains the starting variables in the dataset.
 
 * **What it measures:** 📋 Depressive symptoms from past week:
 
-  * Sadness 😢
-  * Guilt 😔
-  * Worthlessness 😞
-  * Appetite changes 🍴
-  * Sleep problems 😴
-  * Concentration issues 🧠
+😢 Depressed mood
+😞 Low self-worth
+🍴 Poor appetite
+😴 Restless sleep
+🧠 Concentration / effort difficulties
+👥 Loneliness / interpersonal difficulties
+😊 Reduced positive affect
 
 ### 📊 cesd_binary
 
